@@ -49,11 +49,10 @@ Each customer can be updated through 3 stages:
 
 ### 1️⃣ Start Backend
 
-```bash
+
 cd src/backend
 npm install
 npm start
-```bash
 ### 1️⃣ Start Frontent
 npm install
 npm run dev
