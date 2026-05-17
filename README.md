@@ -1,16 +1,61 @@
-# React + Vite
+# 📊 Mini CRM System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple full-stack CRM system built for managing potential customers/leads.  
+This project demonstrates CRUD operations, status tracking, and a notes system using a React frontend and Node.js + MongoDB backend.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🔐 Admin Login
 
-## React Compiler
+To access the dashboard:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 📧 Email: `admin@gmail.com`
+- 🔑 Password: `123456`
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🧠 Features
+
+### 📋 Customer Management
+- View all potential customers
+- Automatically generate mock customers
+- Delete customers
+
+### 🔄 Lead Status Tracking
+Each customer can be updated through 3 stages:
+- New
+- Contacted
+- Converted
+
+### 📝 Notes System
+- Add notes to each customer
+- View all previous notes in a popup modal
+- Notes are stored in MongoDB inside each customer document
+
+### 🎲 Mock Data Generator
+- Generates sample customers using backend API
+- Inserts random data into MongoDB
+
+---
+
+
+---
+
+## 🚀 How to Run the Project
+
+⚠️ You must run backend and frontend in TWO terminals.
+
+---
+
+### 1️⃣ Start Backend
+
+```bash
+cd src/backend
+npm install
+npm start
+
+### 1️⃣ Start Frontent
+npm install
+npm run dev
+
+
